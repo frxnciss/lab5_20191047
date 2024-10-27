@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!-- Toolbar -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_marginTop="70dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¡INGRESA TUS DATOS!"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Campo: Nombre  -->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/lyt_name"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/round_corner_background_white"
+            android:elevation="2dp"
+            android:orientation="vertical"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/raleway_bold"
+                android:text="Nombre"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/ed_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:background="@null"
+                android:layout_marginTop="5dp"
+                android:textSize="20dp"
+                android:hint="Ingrese su nombre"
+                android:inputType="textPersonName" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <!-- Campo: Peso  -->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/lyt_peso"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/round_corner_background_white"
+            android:elevation="2dp"
+            android:orientation="vertical"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/raleway_bold"
+                android:text="Peso (kg)"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/ed_peso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:background="@null"
+                android:layout_marginTop="5dp"
+                android:textSize="20dp"
+                android:hint="Ingrese su peso en kg."
+                android:inputType="numberDecimal" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <!-- Campo: Altura -->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/lyt_altura"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/round_corner_background_white"
+            android:elevation="2dp"
+            android:orientation="vertical"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/raleway_bold"
+                android:text="Altura (cm)"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/ed_altura"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_marginStart="10dp"
+                android:background="@null"
+                android:layout_marginTop="5dp"
+                android:hint="Ingrese su altura en cm."
+                android:inputType="numberDecimal" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <!-- Campo. Edad -->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/lyt_edad"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/round_corner_background_white"
+            android:elevation="2dp"
+            android:orientation="vertical"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/raleway_bold"
+                android:text="Edad"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/ed_edad"
+                android:textSize="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:background="@null"
+                android:layout_marginTop="5dp"
+                android:hint="Edad"
+                android:inputType="number" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <!-- Campo: Género -->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/lyt_genero"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/round_corner_background_white"
+            android:elevation="2dp"
+            android:orientation="vertical"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/raleway_bold"
+                android:text="Género"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <Spinner
+                android:id="@+id/spinner_genero"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <!-- Campo: Nivel de actividad física -->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/lyt_af"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/round_corner_background_white"
+            android:elevation="2dp"
+            android:orientation="vertical"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/raleway_bold"
+                android:text="Nivel de actividad física"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <Spinner
+                android:id="@+id/spinner_af"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <!-- Campo: Objetivo -->
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/lyt_objetivo"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/round_corner_background_white"
+            android:elevation="2dp"
+            android:orientation="vertical"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/raleway_bold"
+                android:text="Objetivo"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <Spinner
+                android:id="@+id/spinner_obj"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <!-- Campo: Definir tiempo -->
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/lyt_tiempo"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/round_corner_background_white"
+            android:elevation="2dp"
+            android:orientation="vertical"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/raleway_bold"
+                android:text="Tiempo (minutos)"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/ed_tiempo"
+                android:textSize="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:background="@null"
+                android:layout_marginTop="5dp"
+                android:hint="Ingresa el tiempo en minutos"
+                android:inputType="number" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <!-- Botones: Ingresar datos -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!-- Botón 2 -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_login"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="27dp"
+                android:layout_marginBottom="27dp"
+                android:background="@drawable/round_corner_background_boton"
+                android:fontFamily="@font/raleway_bold"
+                android:text="Ingresar datos"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.5" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

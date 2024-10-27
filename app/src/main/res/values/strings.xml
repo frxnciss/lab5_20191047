@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">lab5_20191047</string>
+
+    <string-array name="opciones_genero">
+        <item>Seleccione</item>
+        <item>Femenino</item>
+        <item>Masculino</item>
+    </string-array>
+
+    <string-array name="opciones_af">
+        <item>Seleccione</item>
+        <item>Poco o ningún ejercicio</item>
+        <item>Ejercicio ligero (1 - 3 días por semana)</item>
+        <item>Ejercicio moderado (3 - 5 días por semana)</item>
+        <item>Ejercicio fuerte (6 - 7 días por semana)</item>
+        <item>Ejercicio muy fuerte (dos veces al día)</item>
+    </string-array>
+
+    <string-array name="opciones_obj">
+        <item>Seleccione</item>
+        <item>Mantener</item>
+        <item>Subir</item>
+        <item>Bajar</item>
+    </string-array>
+
+</resources>
